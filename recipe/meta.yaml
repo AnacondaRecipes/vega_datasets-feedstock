@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-dep --no-build-isolation -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A Python package for offline access to Vega datasets"
+  summary: A Python package for offline access to Vega datasets
   description: |
     A Python package for offline access to Vega datasets available at
     https://github.com/vega/vega-datasets.
