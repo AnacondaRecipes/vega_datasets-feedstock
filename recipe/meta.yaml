@@ -46,8 +46,8 @@ about:
     - wherever dataset size and/or license constraints make it possible,
       bundle the dataset with the package so that datasets can be loaded in
       the absence of a web connection.
-  doc_url: http://github.com/altair-viz/vega_datasets/
-  dev_url: http://github.com/altair-viz/vega_datasets/
+  doc_url: https://github.com/altair-viz/vega_datasets/
+  dev_url: https://github.com/altair-viz/vega_datasets/
 
 extra:
   recipe-maintainers:
