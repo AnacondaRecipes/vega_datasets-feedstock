@@ -32,7 +32,7 @@ test:
     - vega_datasets.tests
 
 about:
-  home: http://github.com/altair-viz/vega_datasets/
+  home: https://github.com/altair-viz/vega_datasets/
   license: MIT
   license_family: MIT
   license_file: LICENSE
