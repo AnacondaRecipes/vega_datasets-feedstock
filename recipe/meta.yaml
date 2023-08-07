@@ -23,6 +23,10 @@ requirements:
     - pandas
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - vega_datasets
     - vega_datasets.tests
