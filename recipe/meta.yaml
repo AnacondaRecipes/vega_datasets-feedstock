@@ -10,8 +10,7 @@ source:
 
 build:
   number: 0
-  noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
@@ -24,16 +23,20 @@ requirements:
     - pandas
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - vega_datasets
     - vega_datasets.tests
 
 about:
-  home: http://github.com/altair-viz/vega_datasets/
+  home: https://github.com/altair-viz/vega_datasets/
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A Python package for offline access to Vega datasets"
+  summary: A Python package for offline access to Vega datasets
   description: |
     A Python package for offline access to Vega datasets available at
     https://github.com/vega/vega-datasets.
@@ -43,8 +46,8 @@ about:
     - wherever dataset size and/or license constraints make it possible,
       bundle the dataset with the package so that datasets can be loaded in
       the absence of a web connection.
-  doc_url: http://github.com/altair-viz/vega_datasets/
-  dev_url: http://github.com/altair-viz/vega_datasets/
+  doc_url: https://github.com/altair-viz/vega_datasets/
+  dev_url: https://github.com/altair-viz/vega_datasets/
 
 extra:
   recipe-maintainers:
